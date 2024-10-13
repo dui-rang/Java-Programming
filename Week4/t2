@@ -1,15 +1,19 @@
-public class lab2task1 {
+import java.util.Scanner;
+
+public class lab2task2 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         
-        double miles = 100;
-
         
-        final double KILOMETERS_PER_MILE = 1.609;
-
+        System.out.print("Please enter the total number of seconds: ");
+        int a = scanner.nextInt();
         
-        double kilometers = miles * KILOMETERS_PER_MILE;
-
+        int minutes = a / 60; 
+        int remainingSeconds = a % 60;
         
-        System.out.println("Kilometers: " + kilometers);
+        
+        System.out.println(a + " = " + minutes + " minutes and " + remainingSeconds + " seconds.");
+        
+        scanner.close();
     }
 }
